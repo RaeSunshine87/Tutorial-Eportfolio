@@ -164,10 +164,6 @@ nav {
 
 /* TECK - STACK */
 
-.section__title {
-    font-size: 36px;
-}
-
 .language__img {
     transform: all 300ms ease;
 }
@@ -185,7 +181,6 @@ nav {
 .language__img--wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 25px 16px;
 }
 
