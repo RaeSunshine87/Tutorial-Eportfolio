@@ -25,6 +25,11 @@ li {
     list-style-type: none;
 }
 
+element.style {
+    align-items: center;
+    justify-content: center;
+}
+
 .flex {
     display: flex;
 }
@@ -33,13 +38,19 @@ li {
     flex: 1;
 }
 
+element.style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container {
     padding: 50px 0;
 }
 
 .row {
     width: 100%;
-    max-width: 80px;
+    max-width: 80vw;
 }
 
 .text--purple {
@@ -155,11 +166,14 @@ nav {
     flex: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .about-me__img {
     width: 100%;
     margin-top: 150px;
+    align-items: center;
+    justify-content: center;
 }
 
 /* TECK - STACK */
@@ -170,7 +184,7 @@ nav {
     transform: all 300ms ease;
 }
 
-.language__imag:hover {
+.language:hover .language__imag {
     filter: brightness(80%);
     opacity: 0.86;
     transform: scale(0.9);
@@ -199,5 +213,26 @@ nav {
 .language__name {
     position: absolute;
     bottom: 0;
+    transform: scale(0);
+    transition: all 300ms;
+    font-size: 20px;
+    opacity: 0;
 }
 
+.language:hover .language__name {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* PROJECTS */
+
+.project__img {
+    width: 100%;
+}
+
+.project__wrapper {
+    display: flex;
+    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
+    overflow: hidden;
+}
