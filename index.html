@@ -13,22 +13,22 @@
         <nav>
             <div class="personal__logo">Rae Fischer</div>
             <ul class="nav__link--list">
-                <li>
-                    <a href="" class="
+                <li class="nav__link">
+                    <a href="#languages" class="
                        nav__link--anchor
                        link__hover-effect
                        link__hover-effect--black
                      ">Languages</a>
                 </li>
-                <li>
-                    <a href="" class="
+                <li class="nav__link">
+                    <a href="#projects" class="
                        nav__link--anchor
                        link__hover-effect
                        link__hover-effect--black
                      ">Projects</a>
                 </li>
-                <li>
-                    <a href="" class="
+                <li class="nav__link">
+                    <a href="mailto:email@email.com" class="
                        nav__link--anchor
                        nav__link--anchor-primary
                      ">Contact</a>
@@ -42,7 +42,7 @@
                         <img src="./assets/IMG_5345.jpg" class="about-me__picture" alt="Rae">
                     </figure>
                     <h1 class="about-me__info--title">
-                        Hi! I'm <span class="text--purple">Rae Fischer.</span>
+                        Hi! I'm <span class="text--purple">Rae Fischer</span>&nbsp;<span class="wave">👋</span>
                     </h1>
                     <p class="about-me__info--para">
                         I'm a <strong class="text--purple">frontend software engineer</strong> and I build web experiences that are fast, user-friendly, and meaningful — because great design should do more than just look good.
@@ -57,7 +57,7 @@
                     <a href="" class="about-me__link">    
                     <i class="fa-regular fa-envelope"></i>
                     </a>
-                    <a href="" class="about-me__link">    
+                    <a href="./assets/Example Resume.pdf" target="_blank" class="about-me__link">    
                     <i class="fa-solid fa-file-pdf"></i>
                     </a>
                     </div>
@@ -200,12 +200,17 @@
             </div>
          </div>
     </section>
-    <footer>
+    <footer> 
+        <div class="container">
         <div class="row footer__row">
-            <a href="#">
+            <a href="#" class="footer__anchor">
                 <figure>
                     <img src="./assets/RaeLogo.svg" class="footer__logo--img" alt="">
                 </figure>
+                <span class="footer__logo--popper">
+                    Top
+                    <i class="fa-solid fa-arrow-up"></i>
+                </span>
             </a>
             <div class="footer__social--list">
                 <a href="http://mywebsite.com" class="
@@ -229,7 +234,8 @@
                 link__hover-effect--white
                 " target="_blank">Resume</a>
             </div>
-            <div class="gooter__copyright">Copyright © 2025 Rae Fischer</div>
+            <div class="footer__copyright">Copyright © 2025 Rae Fischer</div>
+        </div>
         </div>
     </footer>
 </body>
